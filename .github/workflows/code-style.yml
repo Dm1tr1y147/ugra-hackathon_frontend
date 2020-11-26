@@ -10,11 +10,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install NPM dependencies
-        run: npm ci
+      - name: Install packages
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
 
       - name: Run prettier
-        run: npm run format
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: prettier
 
       - name: Commit actions
         uses: stefanzweifel/git-auto-commit-action@v4
