@@ -18,4 +18,4 @@ const useCounter = (initialState = 0) => {
   return { counter, increaseCounter };
 };
 
-export { useCounter }
+export { useCounter };
