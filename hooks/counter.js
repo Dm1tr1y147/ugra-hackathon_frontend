@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // Если функционал можно где-то переиспользовать или если код логики компонента занимает больше 150 строк, стоит разбить его на кастомные хуки и вынести сюда
 /**
- * Simple counter hook
+ * Simple hook
  * @param {number} initialState
  */
 const useCounter = (initialState = 0) => {
